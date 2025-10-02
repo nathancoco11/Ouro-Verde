@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ouro Verde - História</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #121212;
+      color: #fff;
+    }
+    header {
+      background: rgba(0,0,0,0.85);
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(5px);
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(255,215,0,0.6);
+    }
+    .site-title {
+      font-size: 1.3rem;
+      color: #FFD700;
+      font-weight: 600;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #FFD700;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: #fff;
+    }
+    main {
+      margin-top: 100px;
+      padding: 60px 0;
+    }
+    .page-title {
+      text-align: center;
+      font-size: 2.6rem;
+      margin-bottom: 50px;
+      color: #FFD700;
+    }
+    .history-content {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .history-text {
+      flex: 1;
+      color: #f0f0f0;
+    }
+    .history-text h2 {
+      font-size: 2.4rem;
+      margin-bottom: 25px;
+      color: #FFD700;
+    }
+    .history-text p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+    .history-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+    .history-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+      max-height: 450px;
+    }
+    footer {
+      background: #151515;
+      text-align: center;
+      padding: 40px 0 20px;
+      color: #aaa;
+      font-size: 1rem;
+    }
+    footer p {
+      margin: 8px 0;
+    }
+
+    @media (max-width: 768px) {
+      .page-title {
+        font-size: 2rem;
+      }
+      .history-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+      }
+      .history-text h2 {
+        font-size: 2rem;
+      }
+      .history-text p {
+        font-size: 1rem;
+      }
+      .nav-links {
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo-container">
+        <img src="https://i.ibb.co/7J9kNk7h/imagem-2025-09-30-190206149.png" alt="Ouro Verde" class="logo-img">
+        <span class="site-title">Ouro Verde</span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="#">História</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="page-title">Nossa História</h1>
+      <div class="history-content">
+        <div class="history-image">
+          <img src="https://i.ibb.co/Ngtpt9f7/image.png" alt="Nossa História">
+        </div>
+        <div class="history-text">
+          <h2>Das Terras dos Emirados Árabes Unidos ao Brasil</h2>
+          <p>A Ouro Verde nasceu inspirada nas tradições doces dos Emirados Árabes Unidos, onde o pistache — conhecido como “ouro verde” — é símbolo de hospitalidade, riqueza e refinamento.</p>
+          <p>Em 2020, trazendo consigo as receitas ancestrais e o respeito pelo ingrediente nobre, a fundadora decidiu recriar essa herança no Brasil, unindo técnicas árabes à paixão brasileira por doces artesanais.</p>
+          <p>Hoje, cada peça é cuidadosamente elaborada com pasta de pistache 100% natural, mantendo viva a essência das terras árabes, agora adaptada ao paladar e à elegância do mercado brasileiro.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ouro Verde. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
