@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ouro Verde - Início</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #121212;
+      color: #fff;
+    }
+    header {
+      background: rgba(0,0,0,0.85);
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(5px);
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(255,215,0,0.6);
+    }
+    .site-title {
+      font-size: 1.3rem;
+      color: #FFD700;
+      font-weight: 600;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #FFD700;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: #fff;
+    }
+    section {
+      background: #1a1a1a;
+      padding: 100px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .content {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      max-width: 1000px;
+      text-align: left;
+    }
+    .content.reverse {
+      flex-direction: row-reverse;
+    }
+    .image-box {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+    .image-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+      max-height: 400px;
+    }
+    .text-box {
+      flex: 1;
+      color: #f0f0f0;
+    }
+    .text-box h2 {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+      color: #FFD700;
+    }
+    .text-box p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #ccc;
+    }
+    footer {
+      background: #151515;
+      text-align: center;
+      padding: 40px 0 20px;
+      color: #aaa;
+      font-size: 1rem;
+    }
+    footer p {
+      margin: 8px 0;
+    }
+
+    #produtos .content {
+      flex-direction: column;
+      text-align: center;
+    }
+    #produtos .text-box {
+      margin-bottom: 40px;
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1000px;
+    }
+    .product-card {
+      background: #222;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 18px;
+    }
+    .product-info h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #FFD700;
+    }
+    .product-info p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+      }
+      .content.reverse {
+        flex-direction: column;
+      }
+      .text-box h2 {
+        font-size: 2rem;
+      }
+      .text-box p {
+        font-size: 1rem;
+      }
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo-container">
+        <img src="https://i.ibb.co/7J9kNk7h/imagem-2025-09-30-190206149.png" alt="Ouro Verde" class="logo-img">
+        <span class="site-title">Ouro Verde</span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="historia.html">História</a></li>
+          <li><a href="login.html">login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio">
+    <div class="container">
+      <div class="content">
+        <div class="image-box">
+          <img src="https://i.ibb.co/N2nswhrm/Image.png" alt="Ouro Verde - Início">
+        </div>
+        <div class="text-box">
+          <h2>Ouro Verde</h2>
+          <p>Doces artesanais com o luxo do pistache — o ouro verde do Oriente. Cada peça é feita com paixão, ingredientes premium e um toque de elegância que encanta os sentidos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="produtos">
+    <div class="container">
+      <div class="content">
+        <div class="text-box">
+          <h2>Nossos Doces</h2>
+          <p>Trufas, bombons e barras gourmet feitas com pasta de pistache 100% natural, sem corantes artificiais. Perfeitos para presentear ou se deliciar com sofisticação.</p>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <img src="https://i.ibb.co/N2nswhrm/Image.png" >
+            <div class="product-info">
+              <h3>Ovos de chocolate com pistache</h3>
+              <p>Recheio cremoso de pistache 100% natural, coberto com chocolate belga e finalizado com pistache picado.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://i.ibb.co/B2GZVg6S/Image.png" >
+            <div class="product-info">
+              <h3>Bolo de chocolate belga com calda de pistache</h3>
+              <p>Edição limitada com polvilhado com pistache e toque de Trufas, feito em chocolate meio amargo.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://i.ibb.co/Gv7hzC02/image.png">
+            <div class="product-info">
+              <h3>Barra de Chocolate com Pistache</h3>
+              <p>Barra artesanal de 70% cacau com pedaços generosos de pistache torrado. Sem corantes ou conservantes.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://i.ibb.co/7Jz1fMGp/image.png">
+            <div class="product-info">
+              <h3>Caixa Presente Ouro Verde</h3>
+              <p>Seleção premium com 12 peças variadas, perfeita para presentear quem ama o luxo do pistache.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="historia">
+    <div class="container">
+      <div class="content">
+        <div class="image-box">
+          <img src="https://i.ibb.co/Ngtpt9f7/image.png" alt="Nossa História">
+        </div>
+        <div class="text-box">
+          <h2>Nossa História</h2>
+          <p>Fundada em 2020, a Ouro Verde nasceu da paixão pelo pistache e pela doçura refinada. Hoje, levamos o sabor do “ouro verde” a lares e eventos especiais por todo o Brasil.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ouro Verde. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
